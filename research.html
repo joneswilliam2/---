@@ -28,7 +28,7 @@
 
       <article class="paper">
         <h3>A Look Into the Social and Economic Pressures of the Permian Basin</h3>
-        <p class="paper-meta">Will Jones &middot; University of Houston &middot; 2025</p>
+        <p class="paper-meta">Will Jones &middot; University of Houston &middot; 2025, revised October 2026</p>
         <p class="paper-abstract">
             This paper examines why persistent social distress coexists with sustained economic 
             growth in the Permian Basin, one of the most productive oil-producing regions in the United 
@@ -43,13 +43,14 @@
             are absorbed. An instrumental variables specification using WTI crude oil prices interacted with 
             a Permian Basin indicator confirms this null result, which is also robust to excluding
             single-parent household share, to county-specific linear trends, and to a leads test. These
-            findings suggest that resource-drivenincome gains do not translate automatically into 
-            human capital accumulation or social  improvement, consistent with a place-based inequality 
+            findings suggest that resource-driven income gains do not translate automatically into 
+            human capital accumulation or social improvement, consistent with a place-based inequality 
             framework in which structural and cultural barriers mediate the relationship between economic 
-            growth and well being.
+            growth and well-being.
         </p>
         <div class="paper-links">
           <a href="permianpaper.pdf" class="btn-paper" target="_blank">PDF</a>
+          <a href="#replication" class="btn-paper">Code</a>
         </div>
         <p class="paper-keywords">
           <strong>Keywords:</strong> place-based inequality, resource curse, Permian Basin,
@@ -137,12 +138,36 @@
           0.36–0.37 percentage points of additional home price appreciation, significant at all conventional significance
           levels and stable across all model specifications. This is consistent with the “zoom town” narrative: remote
           work untethered workers from expensive urban areas, generating a demand shock in destination markets
-          that housing supply could not quickly absorb
+          that housing supply could not quickly absorb.
         </p>
-         <div class="paper-links">
+        <div class="paper-links">
           <a href="Chicago Fed RA Finalist Data Task.pdf" class="btn-paper" target="_blank">PDF</a>
         </div>
       </article>
+    </section>
+
+    <section class="paper-section" id="replication">
+      <h2>Replication Code</h2>
+
+      <article class="paper">
+        <h3>A Look Into the Social and Economic Pressures of the Permian Basin</h3>
+        <p class="paper-meta">R &middot; Updated October 2026</p>
+        <p class="paper-abstract">
+          R code for every regression, robustness check, and figure in the paper, including the
+          two-way fixed effects models, the IV specification (WTI &times; Permian exposure), the
+          county-specific trends and leads tests, and all nine figures.
+        </p>
+        <div class="paper-links">
+          <a href="permiancode.R" class="btn-paper" target="_blank">R Script</a>
+          <a href="data1.csv" class="btn-paper" target="_blank">Data (CSV)</a>
+        </div>
+        <p class="paper-keywords">
+          <strong>Data:</strong> compiled from public sources (NCHS, CDC, Census SAIPE, ACS) &middot;
+          <strong>Packages:</strong> tidyverse, plm, lmtest, sandwich, ivreg, stargazer, fixest, patchwork
+        </p>
+      </article>
+    </section>
+
   </main>
 
   <footer>
